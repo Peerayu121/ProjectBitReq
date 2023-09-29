@@ -1,0 +1,10 @@
+.container {
+    background-color: #F4EEE3;
+}
+
+.nav2 {
+    background-color: #93B1C7;
+    /* border: 1px solid; */
+    height: 100px;
+    border-radius: 4%;
+}
