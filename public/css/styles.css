@@ -1,56 +1,84 @@
-
 .my-nav {
     background-color: #93B1C7;
-
     height: 100px;
     border-radius: 0px;
 }
-.login{
+
+.login {
     margin-left: 525px;
     margin-top: 90px;
 }
 
-
-
-
-.logininput{
+.logininput {
     width: 200px;
     height: 20px;
 }
-.login h4{
+
+.login h4 {
     color: rgb(104, 101, 101);
     margin-left: 60px;
 }
-.login h5{
+
+.login h5 {
     color: rgb(104, 101, 101);
     margin-left: 20px;
 }
-.login form input{
+
+.login form input {
     width: 300px;
     height: 30px;
     margin-left: -60px;
     background-color: #f9f6e3;
     border-radius: 15px;
     border: 1px solid black;
-
 }
 
-.forgot a{
-    top: 20px;
-    margin-left: 170px;
-    font-size: 12px;
+.forgot {
+    margin-top: 10px;
+    margin-left: 0px;
+}
 
+.forgot a {
+    top: 50px;
+    margin-left: 180px;
+    font-size: 12px;
     color: rgb(152, 150, 150);
 }
 
-button{
+button {
     background-color: #93B1C7;
     border-radius: 15px;
-
     height: 35px;
     width: 305px;
     margin-top: 10px;
     margin-left: -60px;
-
 }
 
+.selected {
+    margin-left: -80px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.selected p {
+    margin-top: 0px;
+}
+
+.selected input[type="radio"] {
+    margin-right: 6px;
+    /* ปรับระยะห่างขาวข้างขวาของปุ่ม radio */
+    margin-left: 20px;
+    /* ปรับระยะห่างขาวข้างซ้ายของปุ่ม radio */
+    width: 17px;
+    height: 17px;
+}
+
+.notacc a {
+    font-size: 12px;
+    color: rgb(152, 150, 150);
+}
+
+.notacc {
+    margin-left: 40px;
+    margin-top: 10px;
+}

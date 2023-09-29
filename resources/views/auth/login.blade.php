@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="{{asset('./css/styles.css')}}">
+    <link rel="stylesheet" href="{{ asset('./css/styles.css') }}">
     <style>
-               body {
+        body {
             background-color: #f9f6e3;
         }
     </style>
@@ -35,15 +35,16 @@
             <div class="login">
                 <form method="POST" action="{{ route('login') }}">
                     @csrf
-                        <h4>เข้าสู่ระบบ</h4>
-                        <h5>กรุณากรอกอีเมลและรหัสผ่าน</h5>
+                    <h4>เข้าสู่ระบบ</h4>
+                    <h5>กรุณากรอกอีเมลและรหัสผ่าน</h5>
                     <div class="my-email">
-                        <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" placeholder="อีเมล" required autofocus autocomplete="username" />
+                        <x-input id="email" class="block mt-1 w-full" type="email" name="email"
+                            :value="old('email')" placeholder="อีเมล" required autofocus autocomplete="username" />
                     </div><br>
 
                     <div class="my-password">
-                        <x-input id="password" class="block mt-1 w-full" type="password" name="password" placeholder="รหัสผ่าน"   required
-                            autocomplete="current-password" />
+                        <x-input id="password" class="block mt-1 w-full" type="password" name="password"
+                            placeholder="รหัสผ่าน" required autocomplete="current-password" />
                     </div>
 
 
@@ -54,19 +55,18 @@
                                 {{ __('ลืมรหัสผ่าน?') }}
                             </a><br>
                         @endif
-                        <div class="teacher">
-                          
-                        </div>
-                        <div class="TA">
-
-                        </div>
-                        <div class="std">
-
-                        </div>
+                    <div class="selected" required>
+                        <input type="radio" name="radio" id="teacher"><p>อาจารย์</p>
+                        <input type="radio" name="radio" id="TA"><p>ผู้ช่วยสอน</p>
+                        <input type="radio" name="radio" id="std"><p>นักศึกษา</p>
+                    </div>
 
                         <x-button class="loginbutton">
-                            {{ __('เข้าสู่ระบบ')}}
+                            {{ __('เข้าสู่ระบบ') }}
                         </x-button>
+                    </div>
+                    <div class="notacc">
+                        <a href="#">ยังไม่มีผู้ใช้ใช่หรือไม่ ?</a>
                     </div>
                 </form>
             </div>
@@ -77,4 +77,3 @@
 </body>
 
 </html>
-
