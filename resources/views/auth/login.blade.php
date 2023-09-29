@@ -1,8 +1,19 @@
 <x-guest-layout>
+    <div class="nav2">
+            <style>
+                .nav2{
+                    background-color: #93B1C7;
+                    /* border: 1px solid; */
+                    height: 100px;
+                    border-radius: 4%;
+                }
+            </style>
+    </div>
     <x-authentication-card>
-        <x-slot name="logo">
+
+        {{-- <x-slot name="logo">
             <x-authentication-card-logo />
-        </x-slot>
+        </x-slot> --}}
 
         <x-validation-errors class="mb-4" />
 
@@ -14,6 +25,9 @@
 
         <form method="POST" action="{{ route('login') }}">
             @csrf
+            <center><p>เข้าสู่ระบบ</p></center>
+            <br>
+            <center><p>กรุณากรอกอีเมลและรหัสผ่าน</p></center>
 
             <div>
                 <x-label for="email" value="{{ __('Email') }}" />
