@@ -1,10 +1,56 @@
-.container {
-    background-color: #F4EEE3;
+
+.my-nav {
+    background-color: #93B1C7;
+
+    height: 100px;
+    border-radius: 0px;
+}
+.login{
+    margin-left: 525px;
+    margin-top: 90px;
 }
 
-.nav2 {
-    background-color: #93B1C7;
-    /* border: 1px solid; */
-    height: 100px;
-    border-radius: 4%;
+
+
+
+.logininput{
+    width: 200px;
+    height: 20px;
 }
+.login h4{
+    color: rgb(104, 101, 101);
+    margin-left: 60px;
+}
+.login h5{
+    color: rgb(104, 101, 101);
+    margin-left: 20px;
+}
+.login form input{
+    width: 300px;
+    height: 30px;
+    margin-left: -60px;
+    background-color: #f9f6e3;
+    border-radius: 15px;
+    border: 1px solid black;
+
+}
+
+.forgot a{
+    top: 20px;
+    margin-left: 170px;
+    font-size: 12px;
+
+    color: rgb(152, 150, 150);
+}
+
+button{
+    background-color: #93B1C7;
+    border-radius: 15px;
+
+    height: 35px;
+    width: 305px;
+    margin-top: 10px;
+    margin-left: -60px;
+
+}
+

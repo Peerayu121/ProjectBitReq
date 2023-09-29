@@ -7,71 +7,74 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="{{asset('./css/styles.css')}}">
+    <style>
+               body {
+            background-color: #f9f6e3;
+        }
+    </style>
+
 </head>
 
 <body>
-    <x-guest-layout>
-        <div class="nav2">
-        </div>
-        <x-authentication-card>
-            <div class="container">
-                <x-validation-errors class="mb-4" />
+
+    <div class="my-nav">
+
+    </div>
+
+    <div class="my-authentication-card">
+        <div class="my-container">
+            <div class="my-validation-errors mb-4">
+                <!-- แสดงข้อความผิดพลาด (ถ้ามี) -->
+            </div>
 
             @if (session('status'))
-                <div class="mb-4 font-medium text-sm text-green-600">
+                <div class="my-status-message mb-4 font-medium text-sm text-green-600">
                     {{ session('status') }}
                 </div>
             @endif
+            <div class="login">
+                <form method="POST" action="{{ route('login') }}">
+                    @csrf
+                        <h4>เข้าสู่ระบบ</h4>
+                        <h5>กรุณากรอกอีเมลและรหัสผ่าน</h5>
+                    <div class="my-email">
+                        <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" placeholder="อีเมล" required autofocus autocomplete="username" />
+                    </div><br>
 
-            <form method="POST" action="{{ route('login') }}">
-                @csrf
-                <center>
-                    <p>เข้าสู่ระบบ</p>
-                </center>
-                <br>
-                <center>
-                    <p>กรุณากรอกอีเมลและรหัสผ่าน</p>
-                </center>
+                    <div class="my-password">
+                        <x-input id="password" class="block mt-1 w-full" type="password" name="password" placeholder="รหัสผ่าน"   required
+                            autocomplete="current-password" />
+                    </div>
 
-                <div>
-                    <x-label for="email" value="{{ __('Email') }}" />
-                    <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')"
-                        required autofocus autocomplete="username" />
-                </div>
 
-                <div class="mt-4">
-                    <x-label for="password" value="{{ __('Password') }}" />
-                    <x-input id="password" class="block mt-1 w-full" type="password" name="password" required
-                        autocomplete="current-password" />
-                </div>
+                    <div class="forgot">
+                        @if (Route::has('password.request'))
+                            <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                href="{{ route('password.request') }}">
+                                {{ __('ลืมรหัสผ่าน?') }}
+                            </a><br>
+                        @endif
+                        <div class="teacher">
+                          
+                        </div>
+                        <div class="TA">
 
-                <div class="block mt-4">
-                    <label for="remember_me" class="flex items-center">
-                        <x-checkbox id="remember_me" name="remember" />
-                        <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
-                    </label>
-                </div>
+                        </div>
+                        <div class="std">
 
-                <div class="flex items-center justify-end mt-4">
-                    @if (Route::has('password.request'))
-                        <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                            href="{{ route('password.request') }}">
-                            {{ __('Forgot your password?') }}
-                        </a>
-                    @endif
+                        </div>
 
-                    <x-button class="ml-4">
-                        {{ __('Log in') }}
-                    </x-button>
-                </div>
-            </form>
+                        <x-button class="loginbutton">
+                            {{ __('เข้าสู่ระบบ')}}
+                        </x-button>
+                    </div>
+                </form>
             </div>
 
-            
-        </x-authentication-card>
-    </x-guest-layout>
-
+        </div>
+    </div>
 
 </body>
 
 </html>
+
