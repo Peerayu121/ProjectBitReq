@@ -68,6 +68,14 @@
                     <div class="notacc">
                         <a href="#">ยังไม่มีผู้ใช้ใช่หรือไม่ ?</a>
                     </div>
+                    <div class="orr">
+                        <hr><p>หรือ</p>
+                    </div>
+                    <div class="orr2">
+                        <hr>
+                    </div>
+
+                    <center><img src={{ asset('public\image\🦆 icon _google_.png') }} alt=""></center>
                 </form>
             </div>
 

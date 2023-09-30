@@ -82,3 +82,27 @@ button {
     margin-left: 40px;
     margin-top: 10px;
 }
+
+
+/* .orr {
+    background-color: #93B1C7;
+} */
+
+.orr hr {
+    width: 400px;
+    margin-top: 40px;
+    margin-left: -333px;
+    background-color: #93B1C7;
+}
+
+.orr2 hr {
+    width: 400px;
+    margin-top: -22px;
+    margin-left: 120px;
+    background-color: #93B1C7;
+}
+
+.orr p {
+    margin-top: -24px;
+    margin-left: 80px;
+}
