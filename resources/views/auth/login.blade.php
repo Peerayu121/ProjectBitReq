@@ -75,7 +75,8 @@
                         <hr>
                     </div>
 
-                    <center><img src={{ asset('public\image\🦆 icon _google_.png') }} alt=""></center>
+                    <center><img class="logo" src={{ asset('public\image\🦆 icon _google_.png') }} alt=""></center>
+                    <a href="http://#">เข้าสู่ระบบด้วย kkumail</a>
                 </form>
             </div>
 

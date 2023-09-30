@@ -4,6 +4,12 @@
     border-radius: 0px;
 }
 
+.my-navforgot {
+    background-color: #93B1C7;
+    height: 100px;
+    border-radius: 0px;
+}
+
 .login {
     margin-left: 525px;
     margin-top: 90px;
@@ -105,4 +111,9 @@ button {
 .orr p {
     margin-top: -24px;
     margin-left: 80px;
+}
+
+.container2 {
+    margin-top: 100px;
+    margin-left: 650px;
 }
