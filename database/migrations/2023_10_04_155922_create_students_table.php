@@ -4,6 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
+
 return new class extends Migration
 {
     /**
@@ -15,8 +16,7 @@ return new class extends Migration
             $table->id();
             $table->string('id_std');
             $table->string('name');
-            $table->string('email');
-            $table->string('password');
+            $table->string('class');
             $table->timestamps();
         });
     }
