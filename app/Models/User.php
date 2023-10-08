@@ -27,6 +27,9 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'is_student',
+        'is_ta',
+        'is_teacher'
     ];
 
     /**
@@ -58,4 +61,9 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
+
+    public function student(){
+        return $this->hasOne(Student::class,'id_std');
+    }
+
 }

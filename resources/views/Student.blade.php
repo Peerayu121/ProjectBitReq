@@ -10,12 +10,8 @@
     <link rel="stylesheet" href="asset{{('./styles.css')}}">
 </head>
 <body>
-    <div class="container">
-        @foreach ($std as $stds)
-        <h4>Student {{$stds->std_name}}</h4>
-        @endforeach
-        
-    </div>
+    
+    <h3>You are student {{$student->name}}</h3>
     
 </body>
 </html>

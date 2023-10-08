@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\StudentController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,9 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/student', function () {
-    return view('student');
-});
+// Route::get('/student', function () {
+//     return view('student');
+// });
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
@@ -27,4 +28,9 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+    // Route::get('/student',[StudentController::class,'student'])->name('student.home')->middleware('is_student');
+    Route::middleware(['auth'])->group(function () {
+        Route::get('/student', [StudentController::class,'student']);
+    });
 });
+
