@@ -32,5 +32,8 @@ Route::middleware([
     Route::middleware(['auth'])->group(function () {
         Route::get('/student', [StudentController::class,'student']);
     });
+    Route::get('/detailStudent',function () {
+        return view('detailStudent');
+    });
 });
 
