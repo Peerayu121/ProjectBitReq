@@ -38,12 +38,10 @@ Route::middleware([
     });
 });
 
-<<<<<<< HEAD
-=======
+
 
 Route::get('HomeTA',[TAController::class, "TA"])->name('TA');
 Route::get('HomeTA', [TAController::class, 'name'])->name('name');
 Route::get('TAaddsc', [TAController::class, 'TAadd'])->name('TAadd');
 Route::get('TAview', [TAController::class, 'TAview'])->name('TAview');
 
->>>>>>> 632e8332c4b5f532fb5ab79f840c7f6cc5a95cb4
