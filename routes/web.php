@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TAController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,3 +29,10 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+
+Route::get('HomeTA',[TAController::class, "TA"])->name('TA');
+Route::get('HomeTA', [TAController::class, 'name'])->name('name');
+Route::get('TAaddsc', [TAController::class, 'TAadd'])->name('TAadd');
+Route::get('TAview', [TAController::class, 'TAview'])->name('TAview');
+
