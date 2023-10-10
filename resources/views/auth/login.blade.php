@@ -66,7 +66,7 @@
                         </x-button>
                     </div>
                     <div class="notacc">
-                        <a href="#">ยังไม่มีผู้ใช้ใช่หรือไม่ ?</a>
+                        <a href="register">ยังไม่มีผู้ใช้ใช่หรือไม่ ?</a>
                     </div>
                     <div class="orr">
                         <hr><p>หรือ</p>
@@ -76,7 +76,7 @@
                     </div>
 
                     <center><img class="logo" src={{ asset('public\image\🦆 icon _google_.png') }} alt=""></center>
-                    <a href="http://#">เข้าสู่ระบบด้วย kkumail</a>
+                    <a href="https://sso.kku.ac.th/module.php/kkuauth/authpage.php?ReturnTo=https%3A%2F%2Fsso.kku.ac.th%2Fmodule.php%2Fkkuauth%2Fresume.php%3FState%3D_c4fca210d4a8e45a329c657f34323e466de69f77fe%253Ahttps%253A%252F%252Fsso.kku.ac.th%252Fmodule.php%252Fcore%252Fas_login.php%253FAuthId%253Dkkuauth%2526ReturnTo%253Dhttps%25253A%25252F%25252Fsso.kku.ac.th%25252Fmodule.php%25252Fcore%25252Fauthenticate.php%25253Fas%25253Dkkuauth">เข้าสู่ระบบด้วย kkumail</a>
                 </form>
             </div>
 
